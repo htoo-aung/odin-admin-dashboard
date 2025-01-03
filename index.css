@@ -56,6 +56,49 @@ a:active {
     justify-content: center;
 }
 
+.nav-sidebar img {
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: brightness(0) invert(1);
+}
+
+.nav-sidebar a {
+    font-weight: 500;
+}
+
+.nav-sidebar a:hover {
+    color: #E0E0E0;
+}
+
+.nav-sidebar a:active {
+    color: #A9A9A9;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    height: 5rem;
+    padding-right: 2rem;
+}
+
+.nav-header img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.nav-sidebar ul {
+    display: grid;
+    align-items: center;
+    column-gap: 0.4rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 4fr;
+}
+
+.nav-bottom {
+    padding-top: 2rem;
+}
 /* --------------------- */
 
 /* main header */
@@ -165,6 +208,7 @@ a:active {
     color: #FFFFFF;
     background-color: #1992d4;
     font-size: 1rem;
+    font-weight: 500;
 }
 
 .action-items button:hover {
