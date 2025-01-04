@@ -315,6 +315,8 @@ a:active {
     padding-top: 1rem;
     padding-right: 2rem;
     padding-bottom: 1rem;
+    display: grid;
+    margin-bottom: 5.2rem;
 }
 
 .announcement-wrapper {
