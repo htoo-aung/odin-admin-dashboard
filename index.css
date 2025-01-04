@@ -229,14 +229,16 @@ a:active {
     grid-column: 2 / -1;
     background-color: #e2e8f0;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
 }
+
+/* main left cards */
 
 .main-left {
     grid-column: 1 / 2;
-    gap: 2rem;
-    padding: 1rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr repeat(3, 4fr);
@@ -256,6 +258,12 @@ a:active {
     border-radius: 1rem;
     z-index: 10;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card p {
+    color: #a8a8a8;
 }
 
 .card-highlight {
@@ -276,7 +284,6 @@ a:active {
 
 .card-text p {
     margin: 0;
-    color: #a8a8a8;
 }
 
 .card-action {
@@ -300,7 +307,82 @@ a:active {
     gap: 1.4rem;
 }
 
+/* ------------------------ */
+
 .main-right {
     grid-column: 2 / -1;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.announcement-wrapper {
+    background-color: #FFFFFF;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    border-radius: 8px;
+    z-index: 10;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-wrapper h5 {
+    margin-bottom: 0;
+}
+
+.announcement-wrapper p {
+    margin-top: 0.2rem;
+    color: #a8a8a8;
+}
+
+.announcement-1,
+.announcement-2 {
+    border-bottom: solid 1px #a8a8a8;
+}
+
+.announcement-1,
+.announcement-2,
+.announcement-3 {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+.users {
+    background-color: #FFFFFF;
+    z-index: 10;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.user img {
+    justify-self: center;
+}
+
+.title {
+    color: #a8a8a8;
+}
+
+.main-right h3,
+.main-right h5 {
+    font-weight: 500;
+}
+
+.main-right p {
+    font-size: 0.7rem;
+}
+
+.user img {
+    width: 3rem;
+    height: auto;
+    object-fit: cover;
+    object-position: 0% 0%;
+    border-radius: 2rem;
 }
